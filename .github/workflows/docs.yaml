@@ -1,0 +1,35 @@
+# Build the Sphinx documentation to catch errors before they reach
+# Read the Docs. Mirrors the environment declared in .readthedocs.yaml
+# (Ubuntu, Python 3.12, the pinned docs/requirements.txt).
+---
+name: docs
+
+on:
+  push:
+    branches:
+    - main
+  pull_request:
+    paths:
+    - docs/**
+    - .readthedocs.yaml
+    - .github/workflows/docs.yaml
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.12"
+        cache: pip
+        cache-dependency-path: docs/requirements.txt
+
+    - name: Install documentation dependencies
+      run: pip install --requirement docs/requirements.txt
+
+    - name: Build documentation (warnings treated as errors)
+      run: >-
+        sphinx-build -b html -W --keep-going
+        docs/source docs/build/html
