@@ -1,8 +1,7 @@
-[build-system]
-requires = ["flit_core >=3.2,<4"]
-build-backend = "flit_core.buildapi"
-
 [project]
-name = "lumache"
-authors = [{name = "Graziella", email = "graziella@lumache"}]
-dynamic = ["version", "description"]
+name = "xchem-fff"
+version = "0.1.0"
+description = "Documentation for the Fast Forward Fragments (FFF) pipeline used by XChem."
+authors = [{name = "Diamond Light Source"}]
+readme = "README.md"
+requires-python = ">=3.12"

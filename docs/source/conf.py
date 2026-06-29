@@ -19,12 +19,7 @@ extensions = [
     'sphinx.ext.coverage',
     'sphinx.ext.imgmath',
     'myst_parser',
-    "autodoc2",
 ]
-
-# autodoc2_packages = [
-#     "../../XChem-FFF",
-# ]
 
 intersphinx_mapping = {
     'python': ('https://docs.python.org/3/', None),
