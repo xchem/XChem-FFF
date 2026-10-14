@@ -1,16 +1,9 @@
 .ipynb_checkpoints
 docs/build
-<<<<<<< HEAD
-temp/*
-a71ev2az/*
-A71EV2AZ_Cycle_01.ipynb
+temp/
+syndirella-setup/
 .vscode
-=======
 attic/*
 .DS_Store
-<<<<<<< HEAD
->>>>>>> origin/main
-=======
 openbind-rescore/
 update_repo.sh
->>>>>>> origin/ytasdan-4

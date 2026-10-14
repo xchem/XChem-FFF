@@ -79,6 +79,7 @@ if [ $(hostname) == 'cs05r-sc-cloud-30.diamond.ac.uk' ] ; then
     export LOGS=$HOME2/logs
     export PIP_CACHE_DIR=$HOME2/.cache/pip
     export BULK=$HOME2/src/xchem-bulkdock
+    export AIZYNTH_CONFIG_FILE=$XCHEM_FFF/syndirella-setup/aizynth_config.yml
 
     # Activate conda
     export CONDA_PREFIX=$HOME2/conda
