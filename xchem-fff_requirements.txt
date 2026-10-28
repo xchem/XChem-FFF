@@ -225,7 +225,7 @@ wrapt==2.5.0
 wrapt_timeout_decorator==1.5.1
 xchem-fragalysis==1.0.0
 xchem-fragmenstein==1.0.0
-xchem-hippo==1.0.6
+xchem-hippo==1.0.7
 xchem-syndirella==1.0.6
 xlrd==2.0.2
 xxhash==4.0.1
