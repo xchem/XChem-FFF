@@ -115,7 +115,7 @@ A few slurm scripts are necessary to run the full pipeline. Some of them can dir
 ```bash
 cd $HOME2
 mkdir slurm
-cp $XCHEM_FFF/scripts/notebook.sh $HOME/slurm/
+cp $XCHEM_FFF/scripts/notebook.sh $HOME2/slurm/
 cp $XCHEM_FFF/scripts/run_python.sh $HOME2/slurm/
 sed -i 's/__YOUR_WORKDIR__/<WORKDIR>/g' $HOME2/slurm/run_python.sh # Change <WORKDIR> to your correct working directory (e.g. jsmith)
 cp $XCHEM_FFF/scripts/run_bash.sh $HOME2/slurm/
